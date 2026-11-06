@@ -4,11 +4,6 @@ A Raspbot V1 (YDLIDAR TG30, ROS 2 Humble, Raspberry Pi) that **maps a room, loca
 and drives by itself to a destination chosen from a terminal menu**, with live feedback
 (accepted / driving / replanning / completed / failed).
 
-> **Quick start for the marker:** jump to [3. Run the demo](#3-run-the-demo-5-commands).
-> No robot at hand? See [8. Run without the robot (simulator)](#8-run-without-the-robot-simulator).
-
----
-
 ## 1. What the system does
 
 | Assessment task | How it is done | Where |
