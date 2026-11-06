@@ -1,0 +1,18 @@
+# Predefined destination coordinates for raspbot coursework navigation (in meters)
+goals:
+  charger:
+    name: "Home / Charging Station"
+    x: 0.02
+    y: -0.03
+  door:
+    name: "Room Exit Doorway"
+    x: 1.28
+    y: -1.61
+  desk:
+    name: "Study Desk"
+    x: 1.00
+    y: 1.00
+  center:
+    name: "Room Center"
+    x: 0.50
+    y: -0.50

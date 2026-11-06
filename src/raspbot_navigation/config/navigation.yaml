@@ -1,0 +1,16 @@
+
+navigator:
+  ros__parameters:
+    inflation_radius: 0.20
+    linear_speed: 0.6          # the real minimum speed; asking for less changes nothing
+    angular_speed: 0.8          # slower in-place turns (workbook advice for lidar-only localization)
+    heading_tolerance: 0.5      # fewer small corrections that the motors can't do precisely
+    waypoint_tolerance: 0.15
+    goal_tolerance: 0.12        # the position estimate lags a little behind the robot
+    obstacle_distance: 0.25     # it travels faster than assumed, so stop earlier
+    blocked_timeout: 8.0
+    max_time: 180.0
+
+nav_gui:
+  ros__parameters:
+    inflation_radius: 0.20     # keep the same as the navigator

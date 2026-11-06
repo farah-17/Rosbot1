@@ -1,0 +1,25 @@
+# YDLIDAR 4ROS (TOF lidar, same settings family as YDLIDAR TG30)
+# Edit on the Pi:  ~/raspbot_lidar_ws/src/raspbot_mapping/config/ydlidar_4ros.yaml
+ydlidar_ros2_driver_node:
+  ros__parameters:
+    port: /dev/ydlidar          # udev name for the lidar (or /dev/ttyUSB0)
+    frame_id: laser_frame       # TF frame written in every /scan message
+    ignore_array: ""            # angle ranges to blank out, e.g. "-180,-160,160,180"
+    baudrate: 512000            # serial speed of the 4ROS
+    lidar_type: 0               # 0 = TOF, 1 = triangle, 2 = TOF network
+    device_type: 0              # 0 = serial (USB)
+    sample_rate: 20             # thousand samples per second (20 / 18 / 10)
+    abnormal_check_count: 4
+    fixed_resolution: true      # same number of points in every scan
+    reversion: true             # rotate data by 180 degrees
+    inverted: true              # mirror data (clockwise vs anticlockwise)
+    auto_reconnect: true        # reconnect if the USB cable is unplugged
+    isSingleChannel: false
+    intensity: false
+    support_motor_dtr: false
+    angle_min: -180.0           # degrees, keep points from here ...
+    angle_max: 180.0            # ... to here
+    range_min: 0.05             # metres, ignore anything closer
+    range_max: 30.0             # metres, ignore anything further
+    frequency: 10.0             # rotations per second (Hz)
+    invalid_range_is_inf: false

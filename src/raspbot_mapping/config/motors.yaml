@@ -1,0 +1,14 @@
+# Settings for the motor_driver node AND the motor_test program.
+# Edit on the Pi:  ~/raspbot_lidar_ws/src/raspbot_mapping/config/motors.yaml
+motor_driver:
+  ros__parameters:
+    i2c_bus: 1
+    i2c_address: 22        # = 0x16, the Raspbot V1 motor board
+    left_reverse: false    # true flips the LEFT wheels' direction
+    right_reverse: false   # true flips the RIGHT wheels' direction
+    swap_sides: false      # true if left/right commands go to the wrong side
+    max_pwm: 100           # top motor power used (0..255). Slow = better maps
+    min_pwm: 35            # smallest power that still turns the wheels
+    max_linear: 0.6        # /cmd_vel linear.x that means full power
+    max_angular: 1.0       # /cmd_vel angular.z that means full spin power
+    cmd_timeout: 0.5       # seconds without /cmd_vel before stopping (0 = off)

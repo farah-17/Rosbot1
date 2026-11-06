@@ -1,0 +1,6 @@
+Destination:
+  - {'name': 'Home', 'x': -0.01, 'y': -0.01},
+  -  {'name': 'Blue Box', 'x': 0.23, 'y': 0.44},
+  - {'name': 'Small box', 'x': 0.32, 'y': 1.19},
+  -  {'name': 'White box', 'x': 0.83, 'y': 0.59},
+  -  {'name': 'The book', 'x': 0.32,  'y': 0.74},
